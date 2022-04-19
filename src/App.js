@@ -1,7 +1,11 @@
+import Container from "./components/Container"
+import GameHistory from "./components/GameHistory"
+
 function App() {
   return (
     <>
-      <h1>Hello Apex</h1>
+      <Container />
+      <GameHistory />
     </>
   );
 }
