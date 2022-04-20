@@ -8,7 +8,12 @@ module.exports = {
       md: "768px",
       lg: "976px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        apexRed: "rgb(217, 41, 43)",
+        apexRedDark: "rgb(197, 21, 23)",
+      },
+    },
   },
   plugins: [],
 }
