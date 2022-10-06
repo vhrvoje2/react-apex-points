@@ -1,11 +1,9 @@
-import Container from "./components/Container"
-import GameHistory from "./components/GameHistory"
+import Tracker from "./pages/Tracker";
 
 function App() {
   return (
     <>
-      <Container />
-      <GameHistory />
+      <Tracker />
     </>
   );
 }

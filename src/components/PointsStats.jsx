@@ -1,6 +1,11 @@
 import React from 'react'
+import { useContext } from "react";
+import { PointsContext } from "../context/PointsContext"
+
 
 function PointsStats() {
+    const { totalPoints, noGames } = useContext(PointsContext);
+
     return (
         <div className="flex flex-col justify-center space-y-6 md:space-y-0 md:flex-row md:space-x-12">
             <div>
@@ -8,7 +13,7 @@ function PointsStats() {
                     Net Points Today
                 </h2>
                 <p className="text-center text-extrabold text-2xl">
-                    23
+                    {totalPoints}
                 </p>
             </div>
             <div>
@@ -16,7 +21,7 @@ function PointsStats() {
                     No. of games played
                 </h2>
                 <p className="text-center text-extrabold text-2xl">
-                    3
+                    {noGames}
                 </p>
             </div>
         </div>
